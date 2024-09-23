@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stayle.css">
+    <title>canvas💗</title>
+</head>
+
+<body onload="onInit()">
+    <body onload="onInit()">
+		<h1>
+			Hi Canvas
+			<button class="cleaner" onclick="onClearCanvas()">Clear</button>
+		</h1>
+
+		<div class="canvas-container">
+			<canvas width="450" height="450" onclick="onDraw(event)"></canvas>
+		</div>
+
+		<select id="shapeSelect">
+            <option value="line">Line</option>
+            <option value="triangle">Triangle</option>
+            <option value="rect">Rect</option>
+            <option value="circle">Circle</option>
+            <option value="text">Text</option>
+            <option value="pencil">pencil</option>
+        </select>
+    <!-- <canvas width="250" height="250" style="position: absolute; left: 0px; top: 0px;"></canvas> -->
+
+    <label for="bgColor">Set background color:</label>
+    <input type="color" id="bgColor" name="bgColor" value="#FCFFE9" onchange="updateBackgroundColor()" />
+
+    <label for="txtColor">Set text color:</label>
+    <input type="color" id="txtColor" name="txtColor" value="#32C1B5" onchange="updateTextColor()" />
+    <!-- <script src="modal.js"></script>
+    <script src="util.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
